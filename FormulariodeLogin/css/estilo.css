@@ -1,0 +1,126 @@
+*{
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+body{
+  background-image: url("../img/azul.jpg");
+  font-family: sans-serif;
+  margin: 0;
+}
+
+header{
+  background: deepskyblue;
+  width: 100%;
+}
+
+.container{
+  display: flex;
+  flex-flow: row nowrap;
+  flex: 1 1 auto;
+  margin-bottom: 100px;
+  padding: 20px 0;
+  align-items: center;
+  width: 90%;
+}
+
+.logo{
+  flex: 1 1 40%;
+}
+
+.logo .fa-users{
+  font-size: 30px;
+  position: relative;
+  left: 100px;
+  color: #fff;
+}
+
+.menu{
+ flex: 1 1 10%;
+}
+
+.menu ul{
+  list-style-type: none;
+  display: flex;
+}
+
+.menu ul li a{
+  text-decoration: none;
+  color: #fff;
+}
+
+/*--Formulario--*/
+
+.titulo{
+  text-align: center;
+  color: #fff;
+}
+
+.formulario{
+  width: 95%;
+  max-width: 500px;
+  margin: auto;
+  background: white;
+  border-radius: 7px;
+  height: 300px;
+  box-shadow: 10px 10px 18px rgba(0, 0, 0, .8);
+}
+
+
+.subtitulo{
+  text-align: center;
+  background: deepskyblue;
+  padding: 20px;
+  color: #fff;
+  font-weight: 100;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  border-bottom: 3px solid blue;
+}
+
+.contenedor{
+  padding: 10px 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+input{
+  margin-top: 40px;
+  margin-bottom: 50px;
+  padding: 10px;
+}
+
+.input{
+  width: 48%;
+  border: 2px solid darkgray;
+  border-radius: 5px;
+}
+
+.input40{
+  width: 100%;
+  border: 2px solid darkgray;
+  border-radius: 5px;
+}
+
+.boton{
+  background: blue;
+  color: #fff;
+  margin: auto;
+  padding: 7px 50px;
+  font-size: 17px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.boton:active{
+  transform: scale(1.05);
+}
+
+.parrafo{
+  width: 100%;
+  margin: 0;
+  font-size: 13px;
+  text-align: center;
+  margin-top: 15px;
+}

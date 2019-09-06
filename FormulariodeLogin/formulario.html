@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>Formulario de login</title>
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="css/estilo.css">
+
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/1c8209e2c4.js"></script>
+  </head>
+  <body>
+
+    <!--Header-->
+    <header>
+      <div class="container">
+        <div class="logo">
+          <a href="#"><i class="fas fa-users"></i></a>
+        </div>
+        <div class="menu">
+          <ul>
+            <li>
+              <a href="#">
+                INICIO
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                PRODUCTOS
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                CARRITO
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                CONTACTO
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <!--Header-->
+
+    <!--Formulario-->
+    <form class="formulario" action="index.html" method="post">
+      <h2 class="subtitulo">ACCEDER</h2>
+      <div class="contenedor">
+        <input class="input" type="text" name="usuario" placeholder="Usuario" required>
+        <input class="input" type="password" name="contraseña" placeholder="Contraseña" required>
+        <button class="boton" type="submit" name="button">Entrar</button>
+        <p class="parrafo">¿Olvidó su contraseña? <a href="#">Ingrese aquí</a></p>
+      </div>
+    </form>
+    <!--Fin del formulario-->
+  </body>
+</html>
