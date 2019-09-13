@@ -1,0 +1,83 @@
+/* -- Mobile -- */
+
+@media (min-width: 350px) {
+
+  header{
+    text-align: center;
+    background: violet;
+  }
+
+
+      .menu-bar ul{
+        list-style-type: none;
+        padding-left: 0px;
+      }
+
+          .menu-bar ul li a{
+            text-decoration: none;
+            color: #000;
+          }
+
+}
+
+/* -- Tablets -- */
+
+@media (min-width: 680px) {
+
+  header{
+    background: violet;
+  }
+
+      .padre{
+        display: flex;
+        flex-flow: row nowrap;
+        flex: 1 1 auto;
+      }
+
+          .logo{
+            flex: 1 1 30%;
+          }
+
+          .men-der{
+            flex: 1 1 50%;
+          }
+
+}
+
+/*-- Desktop --*/
+
+@media (min-width: 990px) {
+
+  header{
+    background: violet;
+  }
+
+      .sub-header{
+        display: flex;
+        flex-flow: row nowrap;
+        flex: 1 1 auto;
+      }
+
+            .men-izq{
+              flex: 1 1 30%;
+            }
+
+            .menu-bar{
+              flex: 1 1 50%;
+              position: relative;
+            }
+
+            .menu-bar ul{
+              overflow: hidden;
+              position: absolute;
+              right: 40%;
+            }
+
+                .menu-bar ul li{
+                  float: left;
+                }
+
+                .menu-bar ul li a{
+                  display: block;
+                }
+}
