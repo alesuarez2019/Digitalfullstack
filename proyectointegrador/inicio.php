@@ -51,8 +51,7 @@
           </div>
         </header>
       </div>
-    </div>
-  </div>  
+
   <!-- Fin de encabezado -->
 
     <div id="main">
