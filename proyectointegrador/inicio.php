@@ -1,3 +1,13 @@
+<?php
+  $variable1 = "Inicio";
+  $variable2 = "FAQ";
+  $variable3 = "Contacto";
+
+  $registracion = "Registro";
+  $logueado = "Login";
+  $compras = "Carrito";
+?>
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -18,41 +28,62 @@
   </head>
   <body>
 
-    <!-- Encabezado -->
-        <div class="container">
-          <header>
-            <div class="padre">
-              <div class="logo">
-                <h3>Logo</h3>
-              </div>
-              <div class="men-der">
-                <h3>Registro/Login/Carrito</h3>
-              </div>
-            </div>
+  <!-- Encabezado -->
+    <div class="container header">
 
-          <div class="sub-header">
-            <div class="men-izq">
-              <h3>Vinos/Prom./Buscador</h3>
-            </div>
+      <div class="logo">
+        <img src="img/images.png" alt="imagen">
+      </div>
 
-            <div class="menu-bar">
-              <ul>
-                <li>
-                  <a href="#">Inicio</a>
-                </li>
-                <li>
-                  <a href="#">FAQ</a>
-                </li>
-                <li>
-                  <a href="#">Contacto</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </header>
+      <div class="centro">
+        <nav>
+          <ul>
+            <li>
+              <a href="#">
+                <?=$variable1?>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <?=$variable2?>
+              </a>
+            </li>
+            <li>
+              <a href="contacto2.php">
+                <?=$variable3?>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="izq">
+        <nav>
+          <ul>
+            <li>
+              <a href="#">
+                <?=$registracion?>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <?=$logueado?>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <?=$compras?>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="buscar">
+          <h4>Buscador</h4>
       </div>
     </div>
-  </div>  
+
   <!-- Fin de encabezado -->
 
     <div id="main">
@@ -91,62 +122,67 @@
           </div>
         </div>
       </div>
+    </div>
     <!-- Fin de slider -->
 
     <!-- Contenido -->
-    </div>
+
+      <div class="container">
+        <h1 class="titulo1">Productos Destacados</h1>
+      </div>
+
       <div class="container mt-5">
         <div class="row text-xs-center">
           <div class="col-md-4 col-sm-6 my-2">
-            <img src="vino.jpg" alt="" class="img-fluid">
+            <img src="img/tinto.jpg" alt="" class="img-fluid border">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Ex minus numquam natus commodi ipsam recusandae modi sint magnam.</p>
             <button type="button" class="btn btn-primary" name="button">Ver más</button>
           </div>
           <div class="col-md-4 col-sm-6 my-2">
-            <img src="vino.jpg" alt="" class="img-fluid">
+            <img src="img/tinto.jpg" alt="" class="img-fluid border">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Ex minus numquam natus commodi ipsam recusandae modi sint magnam.</p>
             <button type="button" class="btn btn-primary" name="button">Ver más</button>
           </div>
           <div class="col-md-4 col-sm-6 my-2">
-            <img src="vino.jpg" alt="" class="img-fluid">
+            <img src="img/tinto.jpg" alt="" class="img-fluid border">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Ex minus numquam natus commodi ipsam recusandae modi sint magnam.</p>
             <button type="button" class="btn btn-primary" name="button">Ver más</button>
           </div>
           <div class="col-md-4 col-sm-6 my-2">
-            <img src="vino.jpg" alt="" class="img-fluid">
+            <img src="img/tinto.jpg" alt="" class="img-fluid border">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Ex minus numquam natus commodi ipsam recusandae modi sint magnam.</p>
             <button type="button" class="btn btn-primary" name="button">Ver más</button>
           </div>
           <div class="col-md-4 col-sm-6 my-2">
-            <img src="vino.jpg" alt="" class="img-fluid">
+            <img src="img/tinto.jpg" alt="" class="img-fluid border">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Ex minus numquam natus commodi ipsam recusandae modi sint magnam.</p>
             <button type="button" class="btn btn-primary" name="button">Ver más</button>
           </div>
           <div class="col-md-4 col-sm-6 my-2">
-            <img src="vino.jpg" alt="" class="img-fluid">
+            <img src="img/tinto.jpg" alt="" class="img-fluid border">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Ex minus numquam natus commodi ipsam recusandae modi sint magnam.</p>
             <button type="button" class="btn btn-primary" name="button">Ver más</button>
           </div>
           <div class="col-md-4 col-sm-6 my-2">
-            <img src="vino.jpg" alt="" class="img-fluid">
+            <img src="img/tinto.jpg" alt="" class="img-fluid border">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Ex minus numquam natus commodi ipsam recusandae modi sint magnam.</p>
             <button type="button" class="btn btn-primary" name="button">Ver más</button>
           </div>
           <div class="col-md-4 col-sm-6 my-2">
-            <img src="vino.jpg" alt="" class="img-fluid">
+            <img src="img/tinto.jpg" alt="" class="img-fluid border">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Ex minus numquam natus commodi ipsam recusandae modi sint magnam.</p>
             <button type="button" class="btn btn-primary" name="button">Ver más</button>
           </div>
           <div class="col-md-4 col-sm-6 my-2">
-            <img src="vino.jpg" alt="" class="img-fluid">
+            <img src="img/tinto.jpg" alt="" class="img-fluid border">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Ex minus numquam natus commodi ipsam recusandae modi sint magnam.</p>
             <button type="button" class="btn btn-primary" name="button">Ver más</button>
