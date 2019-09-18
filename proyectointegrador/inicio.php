@@ -82,7 +82,10 @@
       <div class="buscar">
           <h4>Buscador</h4>
       </div>
+<<<<<<< HEAD:proyectointegrador/inicio.php
     </div>
+=======
+>>>>>>> a0b435a1df46c9ee2f15110af6f1e70f1f381180:proyectointegrador/inicio.html
 
   <!-- Fin de encabezado -->
 
