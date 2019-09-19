@@ -12,13 +12,20 @@
     <script src="https://kit.fontawesome.com/1c8209e2c4.js"></script>
 
     <!-- Main CSS -->
+<<<<<<< HEAD
+    <link rel="stylesheet" href="css/usuario.css">
+=======
     <link rel="stylesheet" href="css/style.css">
+>>>>>>> d987d436df3399f264c5a51868c39daff32976c7
 
 
     <title>Perfil del usuario</title>
   </head>
   <body>
 
+<<<<<<< HEAD
+      <div class="container px-0">
+=======
       <div class="container px-0 bg-secondary">
         <header>
           <div class="padre">
@@ -50,6 +57,7 @@
           </div>
         </div>
       </header>
+>>>>>>> d987d436df3399f264c5a51868c39daff32976c7
 
         <div class="row">
           <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 mb-5 mt-3">
@@ -62,21 +70,33 @@
           <div class="form-group row">
             <label for="formGroup" class="col-5 col-sm-4 col-md-3 col-lg-3 col-form-label text-right">Nombre de Usuario</label>
               <div class="col-6 col-sm-7 col-md-8 col-lg-4">
+<<<<<<< HEAD
+                <input type="text" class="form-control" name="usuario" id="formGroup">
+=======
                 <input type="text" class="form-control" name="formGroup" id="formGroup">
+>>>>>>> d987d436df3399f264c5a51868c39daff32976c7
               </div>
           </div>
 
           <div class="form-group row">
             <label for="formGroup" class="col-5 col-sm-4 col-md-3 col-lg-3 col-form-label text-right">Nombre</label>
               <div class="col-6 col-sm-7 col-md-8 col-lg-6">
+<<<<<<< HEAD
+                <input type="text" class="form-control" name="nombre" id="formGroup">
+=======
                 <input type="text" class="form-control" name="formGroup" id="formGroup">
+>>>>>>> d987d436df3399f264c5a51868c39daff32976c7
               </div>
           </div>
 
           <div class="form-group row">
             <label for="formGroup" class="col-5 col-sm-4 col-md-3 col-lg-3 col-form-label text-right">Apellidos</label>
               <div class="col-6 col-sm-7 col-md-8 col-lg-6">
+<<<<<<< HEAD
+                <input type="text" class="form-control" name="apellido" id="formGroup">
+=======
                 <input type="text" class="form-control" name="formGroup" id="formGroup">
+>>>>>>> d987d436df3399f264c5a51868c39daff32976c7
               </div>
           </div>
 
@@ -84,7 +104,11 @@
             <label for="formGroup" class="col-5 col-sm-4 col-md-3 col-lg-3 col-form-label text-right">Teléfono</label>
               <div class="input-group col-6 col-sm-7 col-md-8 col-lg-6">
                 <span class="input-group-text" id="basic-addon1"><i class="fas fa-mobile-alt"></i></span>
+<<<<<<< HEAD
+                <input type="text" class="form-control" name="telefono" id="tel">
+=======
                 <input type="text" class="form-control" name="formGroup" id="tel">
+>>>>>>> d987d436df3399f264c5a51868c39daff32976c7
               </div>
           </div>
 
@@ -92,21 +116,33 @@
             <label for="formGroup" class="col-5 col-sm-4 col-md-3 col-lg-3 col-form-label text-right">Correo Electrónico</label>
               <div class="input-group col-6 col-sm-7 col-md-8 col-lg-6">
                 <span class="input-group-text" id="basic-addon1">@</span>
+<<<<<<< HEAD
+                <input type="email" class="form-control" name="email" id="tel">
+=======
                 <input type="email" class="form-control" name="formGroup" id="tel">
+>>>>>>> d987d436df3399f264c5a51868c39daff32976c7
               </div>
           </div>
 
           <div class="form-group row">
             <label for="formGroup" class="col-5 col-sm-4 col-md-3 col-lg-3 col-form-label text-right">Información</label>
               <div class="col-6 col-sm-7 col-md-8 col-lg-6">
+<<<<<<< HEAD
+                <textarea class="form-control" name="informacion" id="formGroup" rows="4" cols="80" placeholder="Agregar descripción..."></textarea>
+=======
                 <textarea class="form-control" name="formGroup" id="formGroup" rows="4" cols="80"></textarea>
+>>>>>>> d987d436df3399f264c5a51868c39daff32976c7
               </div>
           </div>
 
           <div class="form-group row">
             <label for="formGroup" class="col-5 col-sm-4 col-md-3 col-lg-3 col-form-label text-right">Estado</label>
               <div class="col-6 col-sm-7 col-md-8 col-lg-6">
+<<<<<<< HEAD
+                <select class="form-control" name="estado" id="formGroup">
+=======
                 <select class="form-control" name="formGroup" id="formGroup">
+>>>>>>> d987d436df3399f264c5a51868c39daff32976c7
                   <option>En línea</option>
                   <option>Ausente</option>
                   <option>Ocupado</option>
@@ -118,8 +154,13 @@
           <div class="form-group row">
             <label for="formGroup" class="col-5 col-sm-4 col-md-3 col-lg-3 col-form-label text-right">Alias</label>
               <div class="col-6 col-sm-7 col-md-8 col-lg-6">
+<<<<<<< HEAD
+                <input class="form-control" type="text" name="alias" id="formGroup" value="">
+                <span class="help-block text-white">Este nombre será mostrado a los usuarios, ocultando el verdadero nombre.</span>
+=======
                 <input class="form-control" type="text" name="formGroup" id="formGroup" value="">
                 <span class="help-block">Este nombre será mostrado a los usuarios, ocultando el verdadero nombre.</span>
+>>>>>>> d987d436df3399f264c5a51868c39daff32976c7
               </div>
           </div>
 
@@ -129,6 +170,11 @@
                 <button type="submit" class="btn btn-success btn-lg mr-3" name="button"><span><i class="fas fa-save"></i></span> Guardar</button>
                 <button type="submit" class="btn btn-danger btn-lg mr-3" name="button"><span><i class="fas fa-ban"></i></span> Cancelar</button>
               </div>
+<<<<<<< HEAD
+            </div>
+          </form>
+        </div>
+=======
           </div>
         </form>
 
@@ -152,6 +198,7 @@
            </div>
         </footer>
       </div>
+>>>>>>> d987d436df3399f264c5a51868c39daff32976c7
 
 
     <!-- Optional JavaScript -->
