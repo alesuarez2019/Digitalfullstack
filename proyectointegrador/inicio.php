@@ -79,15 +79,13 @@
         </nav>
       </div>
 
-      <!-- Search -->
-      <div class="pull-right hidden-xs hidden-sm buscar text-center">
-        <form action="" method="GET">
-          <input class="text-input" type="text" name="q" placeholder="Buscar">
-          <input class="submit-button" type="submit">
-        </form>
+      <div class="buscar">
+          <h4>Buscador</h4>
       </div>
+<<<<<<< HEAD:proyectointegrador/inicio.php
     </div>
-    <!-- Fin del search -->
+=======
+>>>>>>> a0b435a1df46c9ee2f15110af6f1e70f1f381180:proyectointegrador/inicio.html
 
   <!-- Fin de encabezado -->
 
@@ -95,24 +93,33 @@
       <!-- Slider -->
       <div class="container">
         <div class="bd-example">
-          <div id="slider-home" class="carousel slide" data-ride="carousel">
+          <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
-              <li data-target="#slider-home" data-slide-to="0" class="active"></li>
-              <li data-target="#slider-home" data-slide-to="1"></li>
-              <li data-target="#slider-home" data-slide-to="2"></li>
+              <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+              <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
             </ol>
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img src="slider-vino.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block"></div>
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>...</h5>
+                  <p>...</p>
+                </div>
               </div>
               <div class="carousel-item">
                 <img src="slider-vino.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block"></div>
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>...</h5>
+                  <p>...</p>
+                </div>
               </div>
               <div class="carousel-item">
                 <img src="slider-vino.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block"></div>
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>...</h5>
+                  <p>...</p>
+                </div>
               </div>
             </div>
           </div>
@@ -127,7 +134,7 @@
         <h1 class="titulo1">Productos Destacados</h1>
       </div>
 
-      <div class="container mt-5 shadow-lg p-3 mb-5 bg-white rounded">
+      <div class="container mt-5">
         <div class="row text-xs-center">
           <div class="col-md-4 col-sm-6 my-2">
             <img src="img/tinto.jpg" alt="" class="img-fluid border">
@@ -190,64 +197,17 @@
         <footer class="bg-dark">
            <div class="container text-center">
              <div class="row">
-               <div class="col-md-4 py-3">
-                 <h3 class="text-white">Redes Sociales</h3>
-                  <nav>
-                    <ul class="social-header list-inline mb-0 my-3 text-center">
-                      <li class="list-inline-item">
-                        <a href="#">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
-                              </span>
-                          </a>
-                      </li>
-                      <li class="list-inline-item">
-                        <a href="#">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
-                              </span>
-                          </a>
-                      </li>
-                      <li class="list-inline-item">
-                        <a href="#">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-youtube fa-stack-1x fa-inverse"></i>
-                              </span>
-                          </a>
-                      </li>
-                      <li class="list-inline-item">
-                        <a href="#">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
-                              </span>
-                          </a>
-                      </li>
-                    </ul>
-                  </nav>
+               <div class="col-md-4">
+                  <h2>Redes</h2>
                </div>
-               <div class="col-md-4 py-3">
-                 <h3 class="text-white"><i class="fas fa-truck"></i> Envios Gratis</h3>
-                 <p class="text-white">Compras de $1500 Rosario y alrededores</p>
+               <div class="col-md-4">
+                 <h2>Envios</h2>
                </div>
-               <div class="col-md-4 py-3 payment-container">
-                 <h3 class="text-white">Medios de pago</h3>
-                 <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/visa@2x.png" alt="" height="29">
-                 <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/mastercard@2x.png" alt="" height="29">
-                 <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/amex@2x.png" alt="" height="29">
-                 <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/ar/banelco@2x.png" alt="" height="29">
-                 <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/ar/cabal@2x.png" alt="" height="29">
-                 <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/ar/tarjeta-naranja@2x.png" alt="" height="29">
-                 <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/mercadopago@2x.png" alt="" height="29">
-                 <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/nativa@2x.png" alt="" height="29">
-                 <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/pagofacil@2x.png" alt="" height="29">
-                 <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/rapipago@2x.png" alt="" height="29">
+               <div class="col-md-4">
+                 <h2>Metodo de pago</h2>
                </div>
                <div class="col-md-12 text-center bg-secondary">
-                   <p class="text-white pt-3">&copy;2019 - Todos los derechos reservados.</p>
+                   <h2>Derechos reservados</h2>
                </div>
              </div>
            </div>
