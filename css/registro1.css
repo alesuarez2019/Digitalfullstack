@@ -1,0 +1,23 @@
+  
+.caja{
+    width: 80%;
+    position: absolute;
+    left: 10%;
+    top: 20%;
+    
+    padding: 10px;
+    border-radius: 7px;
+}
+
+#contra2{
+    position: relative;
+    bottom: 34%;
+}
+
+.form-group{
+    
+    margin-right: 60px;
+}
+
+ display: inline-block;
+border: 1px solid black;
