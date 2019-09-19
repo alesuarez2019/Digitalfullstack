@@ -1,0 +1,59 @@
+body {
+    background-image:url(../vinos-41.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.container {
+    margin-top: 30px;
+}
+
+.uno form button,
+.uno form input,
+.uno form textarea {
+    width: 100%;
+    padding: .7em;
+    border: none;
+    background: none;
+    border-bottom: 1px solid red;
+    color: white;
+
+}
+
+.uno{
+    color: white;
+    background-color: rgba(15, 13, 13, 0.719)
+}
+
+.dos {
+    color: rgba(255, 255, 255, 0.699);
+    background-color:  rgba(95, 90, 90, 0.719);
+    text-align: justify;
+
+}
+
+.uno form p{
+    margin: 0;
+    padding: 1em
+}
+
+.uno form button {
+    background: red;
+    border: 0;
+
+}
+
+.row {
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, 1)
+}
+
+h1 {
+    text-align: center;
+    color: white;
+
+}
+
+ul li{
+    text-decoration: none
+}
