@@ -73,7 +73,7 @@
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="carrito.php">
                 <?=$compras?>
               </a>
             </li>
