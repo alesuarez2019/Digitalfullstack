@@ -17,26 +17,26 @@
         <form action="validar.php" method="POST" class="needs-validation" novalidate>
             <div class="form-row">
               <div class="col-md-4 mb-3">
-                <label for="validationCustom01">Nombre</label>
-                <input type="text" name="nombre" class="form-control" id="validationCustom01" placeholder="Nombre" required>
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" class="form-control" id="nombre" placeholder="Nombre" required>
                 <div class="valid-feedback">
                   Se ve bien!
                 </div>
               </div>
               <div class="col-md-4 mb-3">
-                <label for="validationCustom02">Apellido</label>
-                <input type="text" name="apellido" class="form-control" id="validationCustom02" placeholder="Apellido" required>
+                <label for="apellido">Apellido</label>
+                <input type="text" name="apellido" class="form-control" id="apellido" placeholder="Apellido" required>
                 <div class="valid-feedback">
                 Se ve bien!
                 </div>
               </div>
               <div class="col-md-4 mb-3">
-                <label for="validationCustomUsername">Usuario</label>
+                <label for="usuario">Usuario</label>
                 <div class="input-group">
                   <div class="input-group-prepend">
-                    <span class="input-group-text" id="inputGroupPrepend">@</span>
+                    <span class="input-group-text" id="inputGroupPrepen">@</span>
                   </div>
-                  <input type="text" name="usuario" class="form-control" id="validationCustomUsername" placeholder="Usuario" aria-describedby="inputGroupPrepend" required>
+                  <input type="text" name="usuario" class="form-control" id="usuario" placeholder="Usuario" aria-describedby="inputGroupPrepend" required>
                   <div class="invalid-feedback">
                     Por favor elige un nombre de usuario valido.
                   </div>
@@ -44,37 +44,37 @@
               </div>
             </div>
             <div class="form-group">
-                <label for="inputPassword6">Contraseña</label>
-                <input type="password" id="inputPassword6" name="contraseña" class="form-control mx-sm-3" aria-describedby="passwordHelpInline">
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" name="password" class="form-control mx-sm-3" aria-describedby="passwordHelpInline">
                 <small id="passwordHelpInline" class="text-muted">
                   Debe tener entre 8-20 caracteres.
                 </small>
               </div>
               <div class="form-group" id="contra2">
-                <label for="inputPassword6">Repetir Contraseña</label>
-                <input type="password" id="inputPassword6" name="contraseña" class="form-control mx-sm-3" aria-describedby="passwordHelpInline">
+                <label for="confirmar">Confirmar</label>
+                <input type="password" id="confirmar" name="confirmar" class="form-control mx-sm-3" aria-describedby="passwordHelpInline">
                 <small id="passwordHelpInline" class="text-muted">
                   Debe tener entre 8-20 caracteres.
                 </small>
               </div>
             <div class="form-row">
               <div class="col-md-6 mb-3">
-                <label for="validationCustom03">Ciudad</label>
-                <input type="text" name="ciudad" class="form-control" id="validationCustom03" placeholder="Ciudad" required>
+                <label for="ciudad">Ciudad</label>
+                <input type="text" name="ciudad" class="form-control" id="ciudad" placeholder="Ciudad" required>
                 <div class="invalid-feedback">
                     Por favor elige una ciudad valida.
                 </div>
               </div>
               <div class="col-md-3 mb-3">
-                <label for="validationCustom04">Provincia</label>
-                <input type="text" name="provincia" class="form-control" id="validationCustom04" placeholder="Provincia" required>
+                <label for="provincia">Provincia</label>
+                <input type="text" name="provincia" class="form-control" id="provincia" placeholder="Provincia" required>
                 <div class="invalid-feedback">
                     Por favor elige una provincia valida.
                 </div>
               </div>
               <div class="col-md-3 mb-3">
-                <label for="validationCustom05">Codigo postal</label>
-                <input type="text" name="postal" class="form-control" id="validationCustom05" placeholder="Codigo" required>
+                <label for="codigopostal">Codigo postal</label>
+                <input type="text" name="codigopostal" class="form-control" id="codigopostal" placeholder="Codigo" required>
                 <div class="invalid-feedback">
                   Por favor elige un codigo postal valido.
                 </div>
@@ -82,7 +82,7 @@
             </div>
             <div class="form-group">
               <div class="form-check">
-                <input class="form-check-input" name="terminos" type="checkbox" value="" id="invalidCheck" required>
+                <input class="form-check-input" name="terminos" type="checkbox" value="" id="terminos" required>
                 <label class="form-check-label" for="invalidCheck">
                   Acepto terminos y condiciones.
                 </label>
@@ -93,27 +93,6 @@
             </div>
             <button class="btn btn-primary" type="submit">Enviar</button>
           </form>
-
-          <script>
-          // Example starter JavaScript for disabling form submissions if there are invalid fields
-          (function() {
-            'use strict';
-            window.addEventListener('load', function() {
-              // Fetch all the forms we want to apply custom Bootstrap validation styles to
-              var forms = document.getElementsByClassName('needs-validation');
-              // Loop over them and prevent submission
-              var validation = Array.prototype.filter.call(forms, function(form) {
-                form.addEventListener('submit', function(event) {
-                  if (form.checkValidity() === false) {
-                    event.preventDefault();
-                    event.stopPropagation();
-                  }
-                  form.classList.add('was-validated');
-                }, false);
-              });
-            }, false);
-          })();
-          </script>
-    </div>
-</body>
-</html>
+        </div>
+      </body>
+    </html>

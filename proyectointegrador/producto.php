@@ -1,13 +1,3 @@
-<?php
-  $variable1 = "Inicio";
-  $variable2 = "FAQ";
-  $variable3 = "Contacto";
-
-  $registracion = "Registro";
-  $logueado = "Login";
-  $compras = "Carrito";
-?>
-
 <!doctype html>
 <html lang="en">
   <head>
@@ -23,71 +13,13 @@
 
     <!-- Main CSS -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="producto.css">
+    <link rel="stylesheet" href="css/producto.css">
     <title>Inicio</title>
   </head>
   <body>
 
-  <!-- Encabezado -->
-    <div class="container header">
-
-      <div class="logo">
-        <img src="img/images.png" alt="imagen">
-      </div>
-
-      <div class="centro">
-        <nav>
-          <ul>
-            <li>
-              <a href="#">
-                <?=$variable1?>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <?=$variable2?>
-              </a>
-            </li>
-            <li>
-              <a href="contacto2.php">
-                <?=$variable3?>
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-
-      <div class="izq">
-        <nav>
-          <ul>
-            <li>
-              <a href="#">
-                <?=$registracion?>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <?=$logueado?>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <?=$compras?>
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-
-      <div class="buscar">
-          <h4>Buscador</h4>
-      </div>
-    </div>
-
-  <!-- Fin de encabezado -->
 
     <div id="main">
-     
 
     <!-- Contenido -->
     <div class="container">
@@ -98,7 +30,7 @@
                     <div class="carousel-item active">
                         <img src="Altas-Cumbres-Sauvignon-Blanc.png" class="d-block w-100" alt="...">
                     </div>
-                  
+
                   </div>
                 </div>
               </div>
@@ -108,41 +40,18 @@
           <br> Voluminoso en aromas, sobresale el carácter a mermelada y frutos del bosque.
       </p>
       <p>
-          <label for="">Cantidad</label>
-          <input type="text" name="" id="" value="1">
+          <label for="cantidad">Cantidad</label>
+          <input type="text" name="cantidad" id="cantidad" value="1">
           <button type="button" class="btn btn-primary cart"> Agregar al carrito</button>
       </p>
   </div>
-  
-  
-  
-  
   </div>
-  
   </div>
-  
-      
+
+
         <!-- Fin de contenido -->
 
-        <!-- Footer -->
-        <footer class="bg-dark">
-           <div class="container text-center">
-             <div class="row">
-               <div class="col-md-4">
-                  <h2>Redes</h2>
-               </div>
-               <div class="col-md-4">
-                 <h2>Envios</h2>
-               </div>
-               <div class="col-md-4">
-                 <h2>Metodo de pago</h2>
-               </div>
-               <div class="col-md-12 text-center bg-secondary">
-                   <h2>Derechos reservados</h2>
-               </div>
-             </div>
-           </div>
-        </footer>
+
       </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
