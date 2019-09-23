@@ -1,3 +1,16 @@
+<?php
+  if(isset($_POST["submit"])) {
+    $nombre = $_POST["nombre"];
+    $apellido = $_POST["apellido"];
+    $usuario = $_POST["usuario"];
+    $contraseña = $_POST["password"];
+    $confirmar = $_POST["confirmar"];
+    $ciudad = $_POST["ciudad"];
+    $provincia = $_POST["provincia"];
+    $codigopostal = $_POST["codigopostal"];
+  }
+ ?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -19,7 +32,7 @@
 
     <div class="caja py-5 px-3">
         <h2>REGISTRO</h2>
-        <form action="validar.php" method="POST" class="needs-validation" novalidate>
+        <form action=""  method="POST" class="needs-validation" novalidate>
             <div class="form-row">
               <div class="col-md-4 mb-3">
                 <label for="nombre">Nombre</label>
@@ -97,6 +110,7 @@
               </div>
             </div>
             <input type="submit" name="submit" class="btn btn-primary" value="Enviar">
+            <?php include("validar.php") ?>
           </form>
         </div>
       <?php require_once("footer.php") ?>
