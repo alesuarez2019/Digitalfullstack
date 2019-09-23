@@ -11,6 +11,9 @@ function guardar($datos) {
     
 
 }
+$test[]= ["blabla"];
+guardar(test);
+
 ?>
 
 
