@@ -12,47 +12,45 @@
     <script src="https://kit.fontawesome.com/1c8209e2c4.js"></script>
 
     <!-- Main CSS -->
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/producto.css">
+    <link rel="stylesheet" href="css/header.css">
     <title>Inicio</title>
   </head>
   <body>
 
-
-    <div id="main">
+    <?php require_once("header.php") ?>
 
     <!-- Contenido -->
-    <div class="container">
-      <div class="row">
-  <div class="izq col-md-4">
+    <div class="cuerpo">
+      <div class="row py-3 px-3">
+        <div class="izq col-md-3 border">
           <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-                  <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="Altas-Cumbres-Sauvignon-Blanc.png" class="d-block w-100" alt="...">
-                    </div>
-
+              <div class="carousel-inner">
+                  <div class="carousel-item active">
+                      <img src="Altas-Cumbres-Sauvignon-Blanc.png" class="d-block w-100" alt="...">
                   </div>
-                </div>
               </div>
-  <div class="der col-md-8">
-      <h2>Altas cumbres</h2>
-      <p>Son vinos modernos, versátiles y fáciles de maridar. Intenso color, con matices rojos.
-          <br> Voluminoso en aromas, sobresale el carácter a mermelada y frutos del bosque.
-      </p>
-      <p>
-          <label for="cantidad">Cantidad</label>
-          <input type="text" name="cantidad" id="cantidad" value="1">
-          <button type="button" class="btn btn-primary cart"> Agregar al carrito</button>
-      </p>
-  </div>
-  </div>
-  </div>
+            </div>
+          </div>
 
+          <div class="der col-md-9 border">
+            <h2>Altas cumbres</h2>
+            <p>
+              Son vinos modernos, versátiles y fáciles de maridar. Intenso color, con matices rojos.
+              <br> Voluminoso en aromas, sobresale el carácter a mermelada y frutos del bosque.
+            </p>
 
-        <!-- Fin de contenido -->
-
-
+            <p>
+              <label for="cantidad">Cantidad</label>
+              <input type="text" name="cantidad" id="cantidad" value="1">
+              <button type="button" class="btn btn-primary cart"> Agregar al carrito</button>
+            </p>
+          </div>
+        </div>
       </div>
+      <?php require_once("footer.php") ?>
+      <!-- Fin de contenido -->
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

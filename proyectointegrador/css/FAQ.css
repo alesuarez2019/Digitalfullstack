@@ -1,12 +1,5 @@
 body {
-    background-image:url(../vinos-41.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
     font-family: 'Quicksand', sans-serif;
-}
-
-.container {
-    margin-top: 30px;
 }
 
 .cuota {
@@ -14,13 +7,13 @@ body {
 
 }
 
-.row {
+.contenido {
     color: white;
-    background-color: rgba(15, 13, 13, 0.719)
+    background-color: rgba(15, 13, 13, 0.3);
 }
 
 
-h1 {
+h2 {
     text-align: center;
-    color: white;
+    color: #000;
 }

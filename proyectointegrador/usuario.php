@@ -9,39 +9,14 @@
     <!-- Font awesome -->
     <script src="https://kit.fontawesome.com/1c8209e2c4.js"></script>
     <!-- Main CSS -->
+    <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/usuario.css">
     <title>Perfil del usuario</title>
   </head>
   <body>
-      <div class="container px-0 bg-secondary">
-        <header>
-          <div class="padre">
-            <div class="logo">
-              <h3>Logo</h3>
-            </div>
-            <div class="men-der">
-              <h3>Registro/Login/Carrito</h3>
-            </div>
-          </div>
-        <div class="sub-header">
-          <div class="men-izq">
-            <h3>Vinos/Prom./Buscador</h3>
-          </div>
-          <div class="menu-bar">
-            <ul>
-              <li>
-                <a href="#">Inicio</a>
-              </li>
-              <li>
-                <a href="#">FAQ</a>
-              </li>
-              <li>
-                <a href="#">Contacto</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </header>
+
+    <?php require_once("header.php") ?>
+      <div class="px-0 cuerpo">
         <div class="row">
           <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 mb-5 mt-3">
             <h2 class="ml-5">Perfil del Usuario</h2>
@@ -69,7 +44,7 @@
           <div class="form-group row">
             <label for="tel" class="col-5 col-sm-4 col-md-3 col-lg-3 col-form-label text-right">Teléfono</label>
               <div class="input-group col-6 col-sm-7 col-md-8 col-lg-6">
-                <span class="input-group-text" id="basic-addon1"><i class="fas fa-mobile-alt"></i></span>
+                <span class="input-group-text"><i class="fas fa-mobile-alt"></i></span>
                 <input type="text" class="form-control" name="tel" id="tel">
               </div>
           </div>
@@ -104,33 +79,16 @@
                 <span class="help-block">Este nombre será mostrado a los usuarios, ocultando el verdadero nombre.</span>
               </div>
           </div>
-          <div class="form-group row">
-            <label for="" class="col-5 col-sm-4 col-md-3 col-lg-3 col-form-label"></label>
+          <div class="form-group row mb-0">
+            <label for="button" id="button" class="col-5 col-sm-4 col-md-3 col-lg-3 col-form-label"></label>
               <div class="col-6 col-sm-7 col-md-8 col-lg-6 pb-5">
                 <button type="submit" class="btn btn-success btn-lg mr-3" name="button"><span><i class="fas fa-save"></i></span> Guardar</button>
                 <button type="submit" class="btn btn-danger btn-lg mr-3" name="button"><span><i class="fas fa-ban"></i></span> Cancelar</button>
               </div>
           </div>
         </form>
-        <footer class="bg-dark">
-           <div class="container text-center">
-             <div class="row">
-               <div class="col-md-4">
-                  <h2>Redes</h2>
-               </div>
-               <div class="col-md-4">
-                 <h2>Envios</h2>
-               </div>
-               <div class="col-md-4">
-                 <h2>Metodo de pago</h2>
-               </div>
-               <div class="col-md-12 text-center bg-secondary">
-                   <h2>Derechos reservados</h2>
-               </div>
-             </div>
-           </div>
-        </footer>
       </div>
+        <?php require_once("footer.php") ?>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
