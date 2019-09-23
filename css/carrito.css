@@ -13,3 +13,21 @@ body {
 tr {
     color: white
 }
+ .desc { 
+width: 40%
+ }
+ .cant {
+     width: 15%
+ }
+ .pres,
+ .tot {
+width: 20%
+ }
+
+  .fin{
+width: 5%
+ }
+
+ .btn {
+     width: 5%
+ }
