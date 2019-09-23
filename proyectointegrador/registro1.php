@@ -96,7 +96,7 @@
                 </div>
               </div>
             </div>
-            <button class="btn btn-primary my-4" type="submit">Enviar</button>
+            <input type="submit" name="submit" class="btn btn-primary" value="Enviar">
           </form>
         </div>
       <?php require_once("footer.php") ?>
