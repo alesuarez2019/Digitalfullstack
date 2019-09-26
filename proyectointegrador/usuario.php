@@ -1,5 +1,23 @@
-<!doctype html>
-<html lang="en">
+<?php
+ini_set('error_reporting',0);
+  if(isset($_POST["submit"])) {
+    $usuario = $_POST["usuario"];
+    $nombre = $_POST["nombre"];
+    $apellido = $_POST["apellido"];
+    $telefono = $_POST["telefono"];
+    $email = $_POST["email"];
+    $informacion = $_POST["informacion"];
+    $estado = [];
+    $estado["l"] = "En línea";
+    $estado["a"] = "Ausente";
+    $estado["o"] = "Ocupado";
+    $estado["d"] = "Desconectado";
+    $alias = $_POST["alias"];
+  }
+ ?>
+
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -22,7 +40,7 @@
             <h2 class="ml-5">Perfil del Usuario</h2>
           </div>
         </div>
-        <form class="ml-3">
+        <form class="ml-3" action="" method="POST">
           <div class="form-group row">
             <label for="usuario" class="col-5 col-sm-4 col-md-3 col-lg-3 col-form-label text-right">Nombre de Usuario</label>
               <div class="col-6 col-sm-7 col-md-8 col-lg-4">
@@ -42,10 +60,10 @@
               </div>
           </div>
           <div class="form-group row">
-            <label for="tel" class="col-5 col-sm-4 col-md-3 col-lg-3 col-form-label text-right">Teléfono</label>
+            <label for="telefono" class="col-5 col-sm-4 col-md-3 col-lg-3 col-form-label text-right">Teléfono</label>
               <div class="input-group col-6 col-sm-7 col-md-8 col-lg-6">
                 <span class="input-group-text"><i class="fas fa-mobile-alt"></i></span>
-                <input type="text" class="form-control" name="tel" id="tel">
+                <input type="text" class="form-control" name="telefono" id="telefono">
               </div>
           </div>
           <div class="form-group row">
@@ -65,10 +83,17 @@
             <label for="estado" class="col-5 col-sm-4 col-md-3 col-lg-3 col-form-label text-right">Estado</label>
               <div class="col-6 col-sm-7 col-md-8 col-lg-6">
                 <select class="form-control" name="estado" id="estado">
-                  <option>En línea</option>
-                  <option>Ausente</option>
-                  <option>Ocupado</option>
-                  <option>Desconectado</option>
+                  <?php foreach ($estado as $codigo => $valor) : ?>
+                    <?php if ($_POST["estado"] == $codigo) : ?>
+                  <option value="<?=$codigo?>" selected>
+                    <?=$valor?>
+                  </option>
+                    <?php else : ?>
+                  <option value="<?=$codigo?>">
+                    <?=$valor?>
+                  </option>
+                    <?php endif; ?>
+                  <?php endforeach; ?>
                 </select>
               </div>
           </div>
@@ -82,10 +107,11 @@
           <div class="form-group row mb-0">
             <label for="button" id="button" class="col-5 col-sm-4 col-md-3 col-lg-3 col-form-label"></label>
               <div class="col-6 col-sm-7 col-md-8 col-lg-6 pb-5">
-                <button type="submit" class="btn btn-success btn-lg mr-3" name="button"><span><i class="fas fa-save"></i></span> Guardar</button>
-                <button type="submit" class="btn btn-danger btn-lg mr-3" name="button"><span><i class="fas fa-ban"></i></span> Cancelar</button>
+                <input type="submit" class="btn btn-success btn-lg mr-3" name="submit" value="Guardar">
+                <input type="submit" class="btn btn-danger btn-lg mr-3" name="cancel" value="Borrar">
               </div>
           </div>
+          <?php require_once("validarusuario.php") ?>
         </form>
       </div>
         <?php require_once("footer.php") ?>

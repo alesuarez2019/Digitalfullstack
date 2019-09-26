@@ -1,13 +1,26 @@
 <?php
+  ini_set('error_reporting',0);
+
+    $nombre = "";
+    $apellido = "";
+    $usuario = "";
+    $password = "";
+    $confirmar = "";
+    $ciudad = "";
+    $provincia = "";
+    $codigopostal = "";
+
+
   if(isset($_POST["submit"])) {
     $nombre = $_POST["nombre"];
     $apellido = $_POST["apellido"];
     $usuario = $_POST["usuario"];
-    $contraseña = $_POST["password"];
+    $password = $_POST["password"];
     $confirmar = $_POST["confirmar"];
     $ciudad = $_POST["ciudad"];
     $provincia = $_POST["provincia"];
     $codigopostal = $_POST["codigopostal"];
+    $terminos = $_POST["terminos"];
   }
  ?>
 
@@ -36,14 +49,14 @@
             <div class="form-row">
               <div class="col-md-4 mb-3">
                 <label for="nombre">Nombre</label>
-                <input type="text" name="nombre" class="form-control" id="nombre" placeholder="Nombre" required>
+                <input type="text" name="nombre" value="<?=$nombre?>" class="form-control" id="nombre" placeholder="Nombre" required>
                 <div class="valid-feedback">
                   Se ve bien!
                 </div>
               </div>
               <div class="col-md-4 mb-3">
                 <label for="apellido">Apellido</label>
-                <input type="text" name="apellido" class="form-control" id="apellido" placeholder="Apellido" required>
+                <input type="text" name="apellido" value="<?=$apellido?>" class="form-control" id="apellido" placeholder="Apellido" required>
                 <div class="valid-feedback">
                 Se ve bien!
                 </div>
@@ -54,7 +67,7 @@
                   <div class="input-group-prepend">
                     <span class="input-group-text" id="inputGroupPrepen">@</span>
                   </div>
-                  <input type="text" name="usuario" class="form-control" id="usuario" placeholder="Usuario" aria-describedby="inputGroupPrepend" required>
+                  <input type="text" name="usuario" value="<?=$usuario?>" class="form-control" id="usuario" placeholder="Usuario" aria-describedby="inputGroupPrepend" required>
                   <div class="invalid-feedback">
                     Por favor elige un nombre de usuario valido.
                   </div>
@@ -63,14 +76,14 @@
             </div>
             <div class="form-group">
                 <label for="password">Contraseña</label>
-                <input type="password" id="password" name="password" class="form-control" aria-describedby="passwordHelpInline">
+                <input type="password" id="password" name="password" value="<?=$password?>" class="form-control" aria-describedby="passwordHelpInline">
                 <small id="pass" class="text-muted">
                   Debe tener entre 8-20 caracteres.
                 </small>
               </div>
               <div class="form-group" id="contra2">
                 <label for="confirmar">Confirmar</label>
-                <input type="password" id="confirmar" name="confirmar" class="form-control" aria-describedby="passwordHelpInline">
+                <input type="password" id="confirmar" name="confirmar" value="<?=$confirmar?>" class="form-control" aria-describedby="passwordHelpInline">
                 <small id="confi" class="text-muted">
                   Debe tener entre 8-20 caracteres.
                 </small>
@@ -78,21 +91,21 @@
             <div class="form-row">
               <div class="col-md-6 mb-3">
                 <label for="ciudad">Ciudad</label>
-                <input type="text" name="ciudad" class="form-control" id="ciudad" placeholder="Ciudad" required>
+                <input type="text" name="ciudad" value="<?=$ciudad?>" class="form-control" id="ciudad" placeholder="Ciudad" required>
                 <div class="invalid-feedback">
                     Por favor elige una ciudad valida.
                 </div>
               </div>
               <div class="col-md-3 mb-3">
                 <label for="provincia">Provincia</label>
-                <input type="text" name="provincia" class="form-control" id="provincia" placeholder="Provincia" required>
+                <input type="text" name="provincia" value="<?=$provincia?>" class="form-control" id="provincia" placeholder="Provincia" required>
                 <div class="invalid-feedback">
                     Por favor elige una provincia valida.
                 </div>
               </div>
               <div class="col-md-3 mb-3">
                 <label for="codigopostal">Codigo postal</label>
-                <input type="text" name="codigopostal" class="form-control" id="codigopostal" placeholder="Codigo" required>
+                <input type="text" name="codigopostal" value="<?=$codigopostal?>" class="form-control" id="codigopostal" placeholder="Codigo" required>
                 <div class="invalid-feedback">
                   Por favor elige un codigo postal valido.
                 </div>
@@ -100,7 +113,7 @@
             </div>
             <div class="form-group">
               <div class="form-check">
-                <input class="form-check-input" name="terminos" type="checkbox" value="" id="terminos" required>
+                <input class="form-check-input" name="terminos" type="checkbox" id="terminos" required>
                 <label class="form-check-label" for="terminos">
                   Acepto terminos y condiciones.
                 </label>
@@ -110,7 +123,7 @@
               </div>
             </div>
             <input type="submit" name="submit" class="btn btn-primary" value="Enviar">
-            <?php include("validar.php") ?>
+            <?php require_once("validarregistro.php") ?>
           </form>
         </div>
       <?php require_once("footer.php") ?>

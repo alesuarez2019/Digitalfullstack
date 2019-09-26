@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" dir="ltr">
 <head>
     <link rel="stylesheet" href="css/faq.css">
     <link rel="stylesheet" href="css/header.css">

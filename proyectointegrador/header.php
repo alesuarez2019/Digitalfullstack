@@ -5,7 +5,7 @@ $variable3 = "Contacto";
 
 $registracion = "Registro";
 $logueado = "Login";
-$compras = "Carrito";
+$compras = "";
 ?>
 
 
@@ -52,7 +52,7 @@ $compras = "Carrito";
                 </a>
               </li>
               <li>
-                <a href="carrito.php">
+                <a href="carrito.php"><span><i class="fas fa-shopping-cart"></i></span>
                   <?=$compras?>
                 </a>
               </li>
@@ -64,7 +64,7 @@ $compras = "Carrito";
           <div class="pull-right hidden-xs hidden-sm buscar text-center">
             <form action="inicio.php" method="POST">
               <input class="text-input" type="text" name="q" placeholder="Buscar">
-              <input class="submit-button" type="submit">
+              <input class="submit-button" type="submit" value="Buscar">
             </form>
           </div>
         </div>

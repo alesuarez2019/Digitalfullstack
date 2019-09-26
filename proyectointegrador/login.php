@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es" dir="ltr">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,26 +21,26 @@
         <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
           <div class="card card-signin my-5">
             <div class="card-body">
-              <h5 class="card-title text-center">Sign In</h5>
+              <h5 class="card-title text-center">Inicio de Sesión</h5>
               <form class="form-signin">
                 <div class="form-label-group">
-                  <input type="email" id="email" name="email" class="form-control" placeholder="Email address" required autofocus>
+                  <input type="email" id="email" name="email" class="form-control rounded-pill" required autofocus>
                   <label for="email">Email</label>
                 </div>
 
                 <div class="form-label-group">
-                  <input type="password" id="password" name="password" class="form-control" placeholder="Password" required>
-                  <label for="password">Password</label>
+                  <input type="password" id="password" name="password" class="form-control rounded-pill" required>
+                  <label for="password">Contraseña</label>
                 </div>
 
                 <div class="custom-control custom-checkbox mb-3">
-                  <input type="checkbox" name="confirmar" class="custom-control-input" id="confirmar">
-                  <label class="custom-control-label" for="password">Confirmar</label>
+                  <input type="checkbox" name="confirmar" class="custom-control-input rounded-pill" id="confirmar">
+                  <label class="custom-control-label" for="confirmar">Recordar Usuario</label>
                 </div>
-                <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Sign in</button>
+                <button class="btn btn-lg btn-info btn-block text-uppercase rounded-pill" type="submit">Ingresar</button>
                 <hr class="my-4">
-                <button class="btn btn-lg btn-google btn-block text-uppercase btn-primary" type="submit"><i class="fab fa-google mr-2"></i> Sign in with Google</button>
-                <button class="btn btn-lg btn-facebook btn-block text-uppercase btn-primary" type="submit"><i class="fab fa-facebook-f mr-2"></i> Sign in with Facebook</button>
+                <button class="btn btn-lg btn-google btn-block text-uppercase btn-primary rounded-pill" type="submit"><i class="fab fa-google mr-2"></i> Ingresar con Google</button>
+                <button class="btn btn-lg btn-facebook btn-block text-uppercase btn-primary rounded-pill" type="submit"><i class="fab fa-facebook-f mr-2"></i> Ingresar con Facebook</button>
               </form>
             </div>
           </div>

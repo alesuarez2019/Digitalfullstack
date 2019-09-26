@@ -1,11 +1,5 @@
-<?php
-  if(isset($_POST["submit"])) {
-    $email = $_POST["email"];
-  }
- ?>
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -46,7 +40,7 @@
                     <td class="cant text-center">1</td>
                     <td class="prec text-center">300</td>
                     <td class="tot text-center">300</td>
-                    <td><input class="btn btn-danger btn-block" type="submit" value="Eliminar"></input></td>
+                    <td><input class="btn btn-danger btn-block" type="submit" value="Eliminar"></td>
                 </tr>
 
                 <tr>
@@ -54,7 +48,7 @@
                     <td class="cant text-center">1</td>
                     <td class="prec text-center">300</td>
                     <td class="tot text-center">300</td>
-                    <td><input class="btn btn-danger btn-block" type="submit" value="Eliminar"></input></td>
+                    <td><input class="btn btn-danger btn-block" type="submit" value="Eliminar"></td>
                 </tr>
 
                 <tr>
@@ -62,26 +56,25 @@
                     <td class="cant text-center">1</td>
                     <td class="prec text-center">300</td>
                     <td class="tot text-center">300</td>
-                    <td><input class="btn btn-danger btn-block" type="submit" value="Eliminar"></input></td>
+                    <td><input class="btn btn-danger btn-block" type="submit" value="Eliminar"></td>
                 </tr>
 
-                <tr>
+                <tr class="titulo3">
                     <td colspan="3" align="right"><h3>Total</h3></td>
                     <td align="right"><h3>$</h3></td>
                     <td></td>
                 </tr>
 
                 <td colspan="5">
-                    <form class="form-group" action="" method="POST">
+                    <form class="form-group" action="index.php" method="POST">
                         <label for="email">Correo de contacto</label>
                         <input id="email" name="email" value="" class="form-control" type="text" placeholder="Por favor escribe tu correo" required>
-                        <input class="btn btn-primary btn-lg btn-block mt-2" name="submit" type="submit"></input>
-                          <?php require_once("validarcarrito.php") ?>
+                        <input class="btn btn-primary btn-lg btn-block mt-2" name="submit" type="submit">
                     </form>
                 </td>
               </tbody>
             </table>
           </div>
-          <?php require_once("footer.php") ?>
-        </body>
-      </html>
+        <?php require_once("footer.php") ?>
+      </body>
+    </html>

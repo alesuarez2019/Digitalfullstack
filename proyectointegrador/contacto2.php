@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es" dir="ltr">
   <head>
     <link rel="stylesheet" href="css/contacto2.css">
     <link rel="stylesheet" href="css/header.css">

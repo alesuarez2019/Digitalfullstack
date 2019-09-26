@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="es" dir="ltr">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -14,7 +14,7 @@
     <!-- Main CSS -->
     <link rel="stylesheet" href="css/producto.css">
     <link rel="stylesheet" href="css/header.css">
-    <title>Inicio</title>
+    <title>Producto</title>
   </head>
   <body>
 
@@ -27,7 +27,7 @@
           <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
               <div class="carousel-inner">
                   <div class="carousel-item active">
-                      <img src="Altas-Cumbres-Sauvignon-Blanc.png" class="d-block w-100" alt="...">
+                      <img src="img/Altas-Cumbres-Sauvignon-Blanc.png" class="d-block w-100" alt="Imagen">
                   </div>
               </div>
             </div>
@@ -41,9 +41,9 @@
             </p>
 
             <p>
-              <label for="cantidad">Cantidad</label>
+              <label for="cantidad">Cantidad:</label>
               <input type="text" name="cantidad" id="cantidad" value="1">
-              <button type="button" class="btn btn-primary cart"> Agregar al carrito</button>
+              <input type="submit" name="cantidad" value="Agregar al carrito">
             </p>
           </div>
         </div>
