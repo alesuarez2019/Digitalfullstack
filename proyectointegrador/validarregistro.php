@@ -1,4 +1,9 @@
 <?php
+
+function validarRegistro($datos){
+
+  $errores = [];
+
   if(isset($_POST["submit"])) {
     echo "<br>";
     if(strlen($_POST["nombre"]) == 0) {
@@ -33,6 +38,7 @@
       echo "No aceptaste los términos y condiciones <br>";
     }
   }
-
+}
+  validarRegistro($errores);
   require_once("funcionregistro.php");
  ?>

@@ -1,4 +1,9 @@
 <?php
+
+function validarUsuario($datos) {
+
+  $errores = [];
+
   if(isset($_POST["submit"])) {
     echo "<br>";
     if(strlen($_POST["usuario"]) < 10) {
@@ -14,5 +19,7 @@
       echo "El alias debe tener al menos 6 caracteres <br>";
     }
   }
+}
+  validarUsuario($errores);
   require_once("funcionusuario.php");
  ?>

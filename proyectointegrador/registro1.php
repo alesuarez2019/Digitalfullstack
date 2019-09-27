@@ -11,7 +11,7 @@
     $codigopostal = "";
 
 
-  if(isset($_POST["submit"])) {
+  if(isset($_POST)) {
     $nombre = $_POST["nombre"];
     $apellido = $_POST["apellido"];
     $usuario = $_POST["usuario"];
@@ -45,21 +45,15 @@
 
     <div class="caja py-5 px-3">
         <h2>REGISTRO</h2>
-        <form action=""  method="POST" class="needs-validation" novalidate>
+        <form action="registro1.php"  method="POST" class="needs-validation" novalidate>
             <div class="form-row">
               <div class="col-md-4 mb-3">
                 <label for="nombre">Nombre</label>
                 <input type="text" name="nombre" value="<?=$nombre?>" class="form-control" id="nombre" placeholder="Nombre" required>
-                <div class="valid-feedback">
-                  Se ve bien!
-                </div>
               </div>
               <div class="col-md-4 mb-3">
                 <label for="apellido">Apellido</label>
                 <input type="text" name="apellido" value="<?=$apellido?>" class="form-control" id="apellido" placeholder="Apellido" required>
-                <div class="valid-feedback">
-                Se ve bien!
-                </div>
               </div>
               <div class="col-md-4 mb-3">
                 <label for="usuario">Usuario</label>
@@ -68,47 +62,31 @@
                     <span class="input-group-text" id="inputGroupPrepen">@</span>
                   </div>
                   <input type="text" name="usuario" value="<?=$usuario?>" class="form-control" id="usuario" placeholder="Usuario" aria-describedby="inputGroupPrepend" required>
-                  <div class="invalid-feedback">
-                    Por favor elige un nombre de usuario valido.
-                  </div>
                 </div>
               </div>
             </div>
             <div class="form-group">
                 <label for="password">Contraseña</label>
                 <input type="password" id="password" name="password" value="<?=$password?>" class="form-control" aria-describedby="passwordHelpInline">
-                <small id="pass" class="text-muted">
-                  Debe tener entre 8-20 caracteres.
-                </small>
+                <small id="pass" class="text-muted"></small>
               </div>
               <div class="form-group" id="contra2">
                 <label for="confirmar">Confirmar</label>
                 <input type="password" id="confirmar" name="confirmar" value="<?=$confirmar?>" class="form-control" aria-describedby="passwordHelpInline">
-                <small id="confi" class="text-muted">
-                  Debe tener entre 8-20 caracteres.
-                </small>
+                <small id="confi" class="text-muted"></small>
               </div>
             <div class="form-row">
               <div class="col-md-6 mb-3">
                 <label for="ciudad">Ciudad</label>
                 <input type="text" name="ciudad" value="<?=$ciudad?>" class="form-control" id="ciudad" placeholder="Ciudad" required>
-                <div class="invalid-feedback">
-                    Por favor elige una ciudad valida.
-                </div>
               </div>
               <div class="col-md-3 mb-3">
                 <label for="provincia">Provincia</label>
                 <input type="text" name="provincia" value="<?=$provincia?>" class="form-control" id="provincia" placeholder="Provincia" required>
-                <div class="invalid-feedback">
-                    Por favor elige una provincia valida.
-                </div>
               </div>
               <div class="col-md-3 mb-3">
                 <label for="codigopostal">Codigo postal</label>
                 <input type="text" name="codigopostal" value="<?=$codigopostal?>" class="form-control" id="codigopostal" placeholder="Codigo" required>
-                <div class="invalid-feedback">
-                  Por favor elige un codigo postal valido.
-                </div>
               </div>
             </div>
             <div class="form-group">
@@ -117,11 +95,13 @@
                 <label class="form-check-label" for="terminos">
                   Acepto terminos y condiciones.
                 </label>
-                <div class="invalid-feedback">
-                  Tienes que aceptar antes de enviar.
-                </div>
               </div>
             </div>
+            <div class="form-group">
+              <label for="imagen"></label>
+              <input type="file" id="imagen" name="imagen" value="">
+            </div>
+
             <input type="submit" name="submit" class="btn btn-primary" value="Enviar">
             <?php require_once("validarregistro.php") ?>
           </form>

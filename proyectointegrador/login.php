@@ -22,7 +22,7 @@
           <div class="card card-signin my-5">
             <div class="card-body">
               <h5 class="card-title text-center">Inicio de Sesión</h5>
-              <form class="form-signin">
+              <form class="form-signin" action="login.php" method="POST">
                 <div class="form-label-group">
                   <input type="email" id="email" name="email" class="form-control rounded-pill" required autofocus>
                   <label for="email">Email</label>

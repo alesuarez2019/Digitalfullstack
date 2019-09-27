@@ -1,3 +1,13 @@
+<?php
+ini_set('error_reporting',0);
+
+  if ($_POST) {
+    $nombre = $_POST["nombre"];
+    $email = $_POST["email"];
+    $mensaje = $_POST["mensaje"];
+  }
+ ?>
+
 <!DOCTYPE html>
 <html lang="es" dir="ltr">
   <head>
@@ -32,7 +42,7 @@
               <p>Email: email@email.com</p>
               <p>Phone: 555-5555</p>
             </div>
-            <div class="col-md-6">
+            <form class="col-md-6" action="contacto2.php" method="POST">
               <div class="form-group">
                 <label for="nombre">Nombre</label>
                 <input type="text" class="form-control" name="nombre" id="nombre" value="">
@@ -46,10 +56,11 @@
                 <textarea name="mensaje" id="mensaje" class="form-control" rows="5" cols="80"></textarea>
               </div>
               <div class="form-group">
-                <button type="submit" class="btn btn-primary btn-block" name="button">Enviar</button>
+                <button type="submit" class="btn btn-primary btn-block" name="submit">Enviar</button>
               </div>
+              <?php require_once("validarcontacto.php") ?>
             </div>
-          </div>
+          </form>
         </div>
       <?php require_once("footer.php") ?>
     </body>

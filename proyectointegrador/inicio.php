@@ -24,7 +24,7 @@
     <?php require_once("header.php") ?>
     <div id="main">
       <!-- Slider -->
-      <div class="container">
+      <div class="principal">
         <div class="bd-example">
           <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -54,62 +54,62 @@
 
     <!-- Contenido -->
 
-      <div class="container">
+      <div class="principal">
         <h1 class="titulo1">Productos Destacados</h1>
       </div>
 
-      <div class="container mt-5">
+      <div class="principal">
         <div class="row text-xs-center">
-          <div class="col-md-4 col-sm-6 my-2">
-            <img src="img/tinto.jpg" alt="imagen" class="img-fluid border">
+          <div class="thumbnail producto clearfix col-md-4 col-sm-6 my-2 py-2">
+            <img src="img/1.jpg" alt="imagen" class="img-fluid">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Ex minus numquam natus commodi ipsam recusandae modi sint magnam.</p>
             <a class="text-white btn btn-primary text-decoration-none" href="producto.php"><?=$productos?></a>
           </div>
-          <div class="col-md-4 col-sm-6 my-2">
-            <img src="img/tinto.jpg" alt="imagen" class="img-fluid border">
+          <div class="thumbnail producto clearfix col-md-4 col-sm-6 my-2 py-2">
+            <img src="img/1.jpg" alt="imagen" class="img-fluid">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Ex minus numquam natus commodi ipsam recusandae modi sint magnam.</p>
             <button type="button" class="btn btn-primary" name="button">Ver más</button>
           </div>
-          <div class="col-md-4 col-sm-6 my-2">
-            <img src="img/tinto.jpg" alt="imagen" class="img-fluid border">
+          <div class="thumbnail producto clearfix col-md-4 col-sm-6 my-2 py-2">
+            <img src="img/1.jpg" alt="imagen" class="img-fluid">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Ex minus numquam natus commodi ipsam recusandae modi sint magnam.</p>
             <button type="button" class="btn btn-primary" name="button">Ver más</button>
           </div>
-          <div class="col-md-4 col-sm-6 my-2">
-            <img src="img/tinto.jpg" alt="imagen" class="img-fluid border">
+          <div class="thumbnail producto clearfix col-md-4 col-sm-6 my-2 py-2">
+            <img src="img/1.jpg" alt="imagen" class="img-fluid">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Ex minus numquam natus commodi ipsam recusandae modi sint magnam.</p>
             <button type="button" class="btn btn-primary" name="button">Ver más</button>
           </div>
-          <div class="col-md-4 col-sm-6 my-2">
-            <img src="img/tinto.jpg" alt="imagen" class="img-fluid border">
+          <div class="thumbnail producto clearfix col-md-4 col-sm-6 my-2 py-2">
+            <img src="img/1.jpg" alt="imagen" class="img-fluid">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Ex minus numquam natus commodi ipsam recusandae modi sint magnam.</p>
             <button type="button" class="btn btn-primary" name="button">Ver más</button>
           </div>
-          <div class="col-md-4 col-sm-6 my-2">
-            <img src="img/tinto.jpg" alt="imagen" class="img-fluid border">
+          <div class="thumbnail producto clearfix col-md-4 col-sm-6 my-2 py-2">
+            <img src="img/1.jpg" alt="imagen" class="img-fluid">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Ex minus numquam natus commodi ipsam recusandae modi sint magnam.</p>
             <button type="button" class="btn btn-primary" name="button">Ver más</button>
           </div>
-          <div class="col-md-4 col-sm-6 my-2">
-            <img src="img/tinto.jpg" alt="imagen" class="img-fluid border">
+          <div class="thumbnail producto clearfix col-md-4 col-sm-6 my-2 py-2">
+            <img src="img/1.jpg" alt="imagen" class="img-fluid">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Ex minus numquam natus commodi ipsam recusandae modi sint magnam.</p>
             <button type="button" class="btn btn-primary" name="button">Ver más</button>
           </div>
-          <div class="col-md-4 col-sm-6 my-2">
-            <img src="img/tinto.jpg" alt="imagen" class="img-fluid border">
+          <div class="thumbnail producto clearfix col-md-4 col-sm-6 my-2 py-2">
+            <img src="img/1.jpg" alt="imagen" class="img-fluid">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Ex minus numquam natus commodi ipsam recusandae modi sint magnam.</p>
             <button type="button" class="btn btn-primary" name="button">Ver más</button>
           </div>
-          <div class="col-md-4 col-sm-6 my-2">
-            <img src="img/tinto.jpg" alt="imagen" class="img-fluid border">
+          <div class="thumbnail producto clearfix col-md-4 col-sm-6 my-2 py-2">
+            <img src="img/1.jpg" alt="imagen" class="img-fluid">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Ex minus numquam natus commodi ipsam recusandae modi sint magnam.</p>
             <button type="button" class="btn btn-primary" name="button">Ver más</button>

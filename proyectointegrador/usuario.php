@@ -29,7 +29,7 @@ ini_set('error_reporting',0);
     <!-- Main CSS -->
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/usuario.css">
-    <title>Perfil del usuario</title>
+    <title>Modificar perfil</title>
   </head>
   <body>
 
@@ -37,10 +37,10 @@ ini_set('error_reporting',0);
       <div class="px-0 cuerpo">
         <div class="row">
           <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 mb-5 mt-3">
-            <h2 class="ml-5">Perfil del Usuario</h2>
+            <h2 class="ml-5">Modificar perfil</h2>
           </div>
         </div>
-        <form class="ml-3" action="" method="POST">
+        <form class="ml-3" action="usuario.php" method="POST" enctype="multipart/form-data">
           <div class="form-group row">
             <label for="usuario" class="col-5 col-sm-4 col-md-3 col-lg-3 col-form-label text-right">Nombre de Usuario</label>
               <div class="col-6 col-sm-7 col-md-8 col-lg-4">
@@ -85,7 +85,7 @@ ini_set('error_reporting',0);
                 <select class="form-control" name="estado" id="estado">
                   <?php foreach ($estado as $codigo => $valor) : ?>
                     <?php if ($_POST["estado"] == $codigo) : ?>
-                  <option value="<?=$codigo?>" selected>
+                  <option disabled="disabled" value="<?=$codigo?>" selected="selected">
                     <?=$valor?>
                   </option>
                     <?php else : ?>
