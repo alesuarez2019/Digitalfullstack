@@ -40,5 +40,5 @@ function validarRegistro($datos){
   }
 }
   validarRegistro($errores);
-  require_once("funcionregistro.php");
+  require_once("funcionregistro1.php");
  ?>

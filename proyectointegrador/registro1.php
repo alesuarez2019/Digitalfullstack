@@ -45,7 +45,7 @@
 
     <div class="caja py-5 px-3">
         <h2>REGISTRO</h2>
-        <form action="registro1.php"  method="POST" class="needs-validation" novalidate>
+        <form action="perfil.php"  method="POST" class="needs-validation" novalidate>
             <div class="form-row">
               <div class="col-md-4 mb-3">
                 <label for="nombre">Nombre</label>
