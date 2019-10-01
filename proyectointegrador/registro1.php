@@ -14,7 +14,7 @@
   if(isset($_POST)) {
     $nombre = $_POST["nombre"];
     $apellido = $_POST["apellido"];
-    $usuario = $_POST["usuario"];
+    $usuario = $_POST["email"];
     $password = $_POST["password"];
     $confirmar = $_POST["confirmar"];
     $ciudad = $_POST["ciudad"];
@@ -45,7 +45,7 @@
 
     <div class="caja py-5 px-3">
         <h2>REGISTRO</h2>
-        <form action="perfil.php"  method="POST" class="needs-validation" novalidate>
+        <form action="registro1.php"  method="POST" class="needs-validation" novalidate>
             <div class="form-row">
               <div class="col-md-4 mb-3">
                 <label for="nombre">Nombre</label>
@@ -61,7 +61,7 @@
                   <div class="input-group-prepend">
                     <span class="input-group-text" id="inputGroupPrepen">@</span>
                   </div>
-                  <input type="text" name="usuario" value="<?=$usuario?>" class="form-control" id="usuario" placeholder="Usuario" aria-describedby="inputGroupPrepend" required>
+                  <input type="text" name="email" value="<?=$usuario?>" class="form-control" id="usuario" placeholder="Usuario" aria-describedby="inputGroupPrepend" required>
                 </div>
               </div>
             </div>

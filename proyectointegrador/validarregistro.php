@@ -12,7 +12,7 @@ function validarRegistro($datos){
     if(strlen($_POST["apellido"]) == 0) {
       echo "No completaste el apellido <br>";
     }
-    if(filter_var($_POST["usuario"], FILTER_VALIDATE_EMAIL) == false) {
+    if(filter_var($_POST["email"], FILTER_VALIDATE_EMAIL) == false) {
       echo "El usuario no tiene el formato correcto <br>";
     }
     if((($_POST["password"]) == "") && (($_POST["confirmar"]) == "")) {
