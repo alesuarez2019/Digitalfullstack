@@ -2,7 +2,7 @@
 session_start();
 $_SESSION["email"] = $email;
 
-//header("location: perfil.php");
+header("location: perfil.php");
 
 function validarLogin($datos){
 
